@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Details</title>
+</head>
+<body style="font-family: sans-serif;">
+
+    <form>
+        <div>
+
+            <div style="background-color: rgb(59, 59, 180);
+            text-align: center;
+            padding: 1px 0px;
+            color: white;">
+                <h1 style="margin-bottom: 6px;">Client Details</h1>
+                <p style="margin-top: 0px;">Enter the details of all incoming clients.</p>
+            </div>
+
+            <table border="0" style="width: 100%;" cellspacing="0">
+                <tr>
+                    <td>
+                        <label for="Cname">Client Name <span style="color: red;">*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="Cname" required style="width: 98%;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="CompanyName">Company <span style="color: red;">*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="CompanyName" required style="width: 98%;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="title">Title</label>
+                    </td>
+                    <td>
+                        <input type="text" id="title" required style="width: 98%;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="department">Department <span style="color: red;">*</span></label>
+                    </td>
+                    <td>
+                        <select id="department" style="width: 100%;">
+                            <option>-Select-</option>
+                            <option value="1">Human Resources Dept.</option>
+                            <option value="2">Secretary Dept.</option>
+                            <option value="3">Finance Dept.</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Preferred contact method</td>
+                    <td>
+                      <label>
+                        <input type="radio" name="contact">
+                        Email
+                      </label>  
+                      <label>
+                        <input type="radio" name="contact">
+                        Phone
+                      </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" style="width: 98%;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="phone">Phone</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="phone" style="width: 98%;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="address">Company address <span style="color: red;">*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="address" required style="width: 98%;"> <br>
+                        <span style="color:rgb(189, 184, 184);">Street Address</span> <br>
+                        <input type="text" style="width: 98%;"> <br>
+                        <span style="color:rgb(189, 184, 184);">Address Line 2</span> <br>
+                        
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" > <br>
+                                    <span style="color:rgb(189, 184, 184);">City</span>
+                                </td>
+                                <td>
+                                    <input type="text"><br>
+                                    <span style="color:rgb(189, 184, 184);">State/Region/Province</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="text"> <br>
+                                    <span style="color:rgb(189, 184, 184);">Postal/Zip Code</span>
+                                </td>
+                                <td>
+                                    <select id="country" style="width: 98%;">
+                                        <option>-Select-</option>
+                                        <option value="1">Nigeria</option>
+                                        <option value="2">USA</option>
+                                        <option value="3">China</option>
+                                        <option value="4">Malaysia</option>
+                                        <option value="5">Canada</option>
+                                    </select> <br>
+                                    <span style="color:rgb(189, 184, 184);">Country</span>
+                                </td>
+                            </tr>
+                        </table>  
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="website">Company website <span style="color: red;">*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="website" required style="width: 98%;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="logo">Company logo</label>
+                    </td>
+                    <td>
+                        <input type="file" id="logo">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="hours">Working Hours <span style="color: red;">*</span></label></label>
+                    </td>
+                    <td>
+                        <input type="text" id="hours" required style="width: 98%;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="days">Working Days <span style="color: red;">*</span></label></label>
+                    </td>
+                    <td>
+                        <input type="text" id="days" required style="width: 98%;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="billing cycle">Billing Cycle <span style="color: red;">*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="billing cycle" required style="width: 98%;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="information">Additional Information</label>
+                    </td>
+                    <td>
+                        <textarea name="" id="information" cols="40" rows="4" required></textarea>
+                    </td>
+                </tr>
+
+
+            </table>
+            
+
+
+            <button style="font-family: serif;
+            font-size: 16px;
+            margin-top: 8px;
+            margin-left: 50%;">Submit</button>
+
+
+        </div>
+    </form>
+    
+</body>
+</html>
